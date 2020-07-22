@@ -1,7 +1,7 @@
 var searchInput = document.querySelector("#search");
 var nameDiv =document.querySelector("#name");
 var searchBtn = document.querySelector("#search-btn");
-
+var recentSearch = document.querySelector("last-search");
 
 
 function nameDisplay(type, message){
@@ -25,6 +25,7 @@ searchBtn.addEventListener("click", function(event){
 
     localStorage.setItem("user", JSON.stringify(user));
 
-    var lastName = JSON.parse(localStorage.getItem("user"));
+    var lastCollege = JSON.parse(localStorage.getItem("user"));
+    recentSearch.textContent = lastCollege.collegeName
 
 })
