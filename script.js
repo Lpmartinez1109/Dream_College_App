@@ -19,7 +19,7 @@ searchBtn.addEventListener("click", function(event){
     if(user.searchInput === ""){
         nameDisplay("error", "Search field cannot be blank")
     }else{
-        nameDisplay("success", searchInput)
+        nameDisplay("success", "Search Completed")
     }
 
 
