@@ -25,8 +25,6 @@
         <script type="text/javascript">
 
         var colleges = ["Harvard", "Yale", "Eastern Illinois University", "Cambridge"];
-        var key = "free_08f13934a3a96803db7cbb36c5"
-
          function displayCollegeInfo(){
             var college = $(this).attr("data-name");
             var queryURL = "https://api.collegeai.com/v1/api/autocomplete/" + colleges + "?api_key=" + key + "&query=MIT";
